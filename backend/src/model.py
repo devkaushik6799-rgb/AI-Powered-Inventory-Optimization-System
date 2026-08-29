@@ -16,7 +16,7 @@ def train_xgboost(df):
     X = df[features]
     y = df['sales']
     
-    # Split: Train on 80%, Test on 20%
+    
     split = int(len(df) * 0.8)
     X_train, X_test = X.iloc[:split], X.iloc[split:]
     y_train, y_test = y.iloc[:split], y.iloc[split:]

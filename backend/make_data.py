@@ -1,12 +1,12 @@
 import pandas as pd
 import numpy as np
 
-# Create data/ folder if it doesn't exist
+
 import os
 if not os.path.exists('data'):
     os.makedirs('data')
 
-# Generate 1000 days of data
+
 dates = pd.date_range(start='2023-01-01', periods=1000, freq='D')
 data = []
 for product in ['SKU_01', 'SKU_02', 'SKU_03']:
